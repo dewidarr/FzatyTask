@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/typeoffaza"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/type_car" />
+
+    <TextView
+        android:id="@+id/fazastatus"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:maxLines="2"
+        android:text="ابى اروح الهايبر وما عندى سيارة ممكن حد يودينى"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#212121"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/typeoffaza"
+        app:layout_constraintTop_toTopOf="@+id/typeoffaza" />
+
+    <TextView
+        android:id="@+id/timeoffaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="منذ ساعه"
+        android:textColor="#CBCBCB"
+        android:textSize="14sp"
+        android:drawableRight="@drawable/my_list_help_accepted_time"
+        app:layout_constraintEnd_toStartOf="@+id/typeoffaza"
+        app:layout_constraintTop_toBottomOf="@+id/fazastatus" />
+
+    <TextView
+        android:id="@+id/genderof_faza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="رجال"
+        android:textSize="14sp"
+        android:textColor="#CBCBCB"
+        android:drawableRight="@drawable/my_list_help_accepted_info_attendance"
+        app:layout_constraintEnd_toStartOf="@+id/timeoffaza"
+        app:layout_constraintTop_toBottomOf="@+id/fazastatus" />
+
+    <TextView
+        android:id="@+id/typeof_faza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="فزعه سيارة"
+        android:textSize="14sp"
+        android:textColor="#CBCBCB"
+        android:drawableRight="@drawable/my_list_help_accepted_info_help_type"
+        app:layout_constraintEnd_toStartOf="@+id/genderof_faza"
+        app:layout_constraintTop_toBottomOf="@+id/fazastatus" />
+
+    <TextView
+        android:id="@+id/numberof_faza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="2 فزعوا"
+        android:textSize="14sp"
+        android:textColor="#CBCBCB"
+        android:drawableRight="@drawable/my_list_help_accepted_accept"
+        app:layout_constraintEnd_toStartOf="@+id/typeof_faza"
+        app:layout_constraintTop_toBottomOf="@+id/fazastatus" />
+
+    <Button
+        android:id="@+id/button_cancle"
+        android:layout_width="110dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:text="الغاء"
+        android:textSize="16sp"
+        android:background="@drawable/button_cancle"
+        android:textColor="#A32389"
+        app:layout_constraintEnd_toEndOf="@+id/timeoffaza"
+        app:layout_constraintTop_toBottomOf="@+id/timeoffaza" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/otherappbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/tablayoutbackground"
+        android:theme="@style/AppTheme.NoActionAndStatusBar">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/othertablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#F2F3ED"
+            app:tabIndicatorColor="#A32389"
+            app:tabIndicatorFullWidth="false"
+            android:layoutDirection="rtl"
+            app:tabSelectedTextColor="#A32389"
+            app:tabTextColor="#B8B8B8">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/otherabitem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قيد الانتظار" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/othertabitem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تم الالغاء" />
+            <android.support.design.widget.TabItem
+                android:id="@+id/othertabitem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تم القبول" />
+
+        </android.support.design.widget.TabLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/othercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>
